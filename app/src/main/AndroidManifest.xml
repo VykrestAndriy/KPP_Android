@@ -25,6 +25,8 @@
             android:exported="false" />
         <activity android:name=".CalculatorActivity"
             android:exported="false" />
+        <activity android:name=".FormaActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
