@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var commenceActivityButton: Button
     private lateinit var numericalToolButton: Button
     private lateinit var formButton: Button
+    private lateinit var carActivityButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         commenceActivityButton = findViewById(R.id.commenceActivityButton)
         numericalToolButton = findViewById(R.id.numericalToolButton)
         formButton = findViewById(R.id.formButton)
+        carActivityButton = findViewById(R.id.carActivityButton)
 
         commenceActivityButton.setOnClickListener {
             val intent = Intent(this, GameActivity::class.java)
@@ -31,6 +33,11 @@ class MainActivity : AppCompatActivity() {
 
         formButton.setOnClickListener {
             val intent = Intent(this, FormaActivity::class.java)
+            startActivity(intent)
+        }
+
+        carActivityButton.setOnClickListener {
+            val intent = Intent(this, CarActivity::class.java)
             startActivity(intent)
         }
     }
